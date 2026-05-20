@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business-card</title>
+    <link rel="stylesheet" href="Business-card.css">
+</head>
+
+<body>
+    <div class="lang-switch">
+        <button class="lang-btn active" id="btn-fa">فارسی</button>
+        <button class="lang-btn" id="btn-en">English</button>
+    </div>
+
+
+    <div class="business-card">
+        <!-- داخل body، قبل از business-card -->
+        <!-- <div class="bracket-decoration left">{</div>
+        <div class="bracket-decoration right">}</div> -->
+
+        <!-- چند نقطه تزئینی -->
+        <div class="dot-decoration dot-1"></div>
+        <div class="dot-decoration dot-2"></div>
+        <div class="dot-decoration dot-3"></div>
+        <div class="dot-decoration dot-4"></div>
+        <div class="dot-decoration dot-5"></div>
+        <div class="card-glow"></div>
+
+        <div class="avatar">
+            <div class="code-symbol">&lt;/&gt;</div>
+        </div>
+
+        <!-- متن‌هایی که با JS تغییر می‌کنند -->
+        <h1 class="name" id="name">صالح سلیمی</h1>
+        <p class="title" id="title">طراح سایت | فرانت‌اند</p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <span class="info-text"><a href="mailto:Fxsalimi.saleh@gmail.com"
+                        id="email-text">Fxsalimi.saleh@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📞</span>
+                <span class="info-text"><a href="tel:09330434871" id="phone-text">09330434871</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">🌐</span>
+                <span class="info-text"><a href="menu.html" id="website-text">lumin.ir</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <span class="info-text" id="location-text">ایران ، اراک</span>
+            </div>
+        </div>
+
+        <div class="social-section">
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="#" class="social-link telegram">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.07-.06-.18-.04-.26-.02-.11.02-1.85 1.17-5.22 3.45-.49.34-.94.5-1.34.49-.44-.01-1.28-.25-1.91-.45-.77-.25-1.38-.38-1.33-.8.03-.22.33-.45.92-.68 2.04-.89 4.64-1.91 6.96-2.79 1.45-.55 2.53-.86 3.12-.94.32-.04.77.01.98.27.19.23.21.58.16.95z" />
+                        </svg>
+                    </a>
+                    <span class="social-name">Telegram</span>
+                </div>
+                <div class="social-item">
+                    <a href="#" class="social-link instagram">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428-.254.66-.598 1.216-1.153 1.772-.5.509-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465-.66-.254-1.216-.598-1.772-1.153-.509-.5-.902-1.105-1.153-1.772-.247-.637-.415-1.363-.465-2.428-.047-1.066-.06-1.405-.06-4.122 0-2.717.01-3.056.06-4.122.05-1.065.218-1.79.465-2.428.254-.66.598-1.216 1.153-1.772.5-.509 1.105-.902 1.772-1.153.637-.247 1.363-.415 2.428-.465 1.066-.047 1.405-.06 4.122-.06zm0 5.6c-2.433 0-4.4 1.967-4.4 4.4s1.967 4.4 4.4 4.4 4.4-1.967 4.4-4.4-1.967-4.4-4.4-4.4zm0 7.2c-1.54 0-2.8-1.26-2.8-2.8 0-1.54 1.26-2.8 2.8-2.8 1.54 0 2.8 1.26 2.8 2.8 0 1.54-1.26 2.8-2.8 2.8z" />
+                        </svg>
+                    </a>
+                    <span class="social-name">Instagram</span>
+                </div>
+                <div class="social-item">
+                    <a href="#" class="social-link github">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.56 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z" />
+                        </svg>
+                    </a>
+                    <span class="social-name">GitHub</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-line">
+            <span class="code-keyword">const</span> designer = {<br>
+            &nbsp;&nbsp;name: <span class="code-string" id="code-name">"Saleh"</span>,<br>
+            &nbsp;&nbsp;ready: <span class="code-boolean">true</span><br>
+            };
+        </div>
+    </div>
+
+    <div class="persian-bio" id="bio-box">
+        <h3 class="bio-title" id="bio-title">طراحی به سبک خودم</h3>
+        <p class="bio-text" id="bio-text1">
+            من صالح هستم. طراحی رو با HTML و CSS به عنوان زبانی برای خلق تجربه‌های بصری متفاوت یاد می‌گیرم.
+            به جای قالب‌های تکراری، به دنبال ایده‌های تازه و پروژه‌های خاص هستم.
+        </p>
+        <p class="bio-text" id="bio-text2">
+            اگر تو هم به فکر طراحی هستی که ردپای خودشو داشته باشه
+            خوشحال می‌شم فرصت همکاری رو با هم بررسی کنیم.
+        </p>
+        <div class="bio-cta">
+            <a href="mailto:fxsalimi.saleh@gmail.com" class="bio-btn" id="bio-btn-text">بریم برای همکاری →</a>
+        </div>
+    </div>
+    <script src="Business-card.js"></script>
+</body>
+
+</html>
